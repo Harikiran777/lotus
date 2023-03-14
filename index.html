@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #center{
+            position: absolute;
+            left: 45%;
+            top: 200px;
+        }
+        #a{
+            width: 80px;
+            height: 200px;
+            background-color:pink;
+            border: 2px solid black;
+            border-radius: 100% 0px 100% 0px;
+            position: absolute;
+            left: 0px;
+            rotate: -20deg;
+            z-index: 1;
+            transition: rotate 10s left 20s;            
+        }
+        #b{
+            width: 80px;
+            height: 200px;
+            background-color: pink;
+            border: 2px solid black;
+
+            border-radius: 100% 0px 100% 0px;
+            position: absolute;
+            top: 10px;
+            rotate: -20deg;
+            left: 0px;
+            transition: rotate 10s left 20s;
+           
+        }
+        #c{
+            width: 80px;
+            height: 200px;
+            background-color: pink;
+            border: 2px solid black;
+            border-radius: 0px 100% 0px 100%;
+            position: absolute;
+            left: 0px;
+            rotate: 20deg;
+            transition: rotate 10s left 20s;
+        }
+        #d{
+            width: 80px;
+            height: 200px;
+            background-color: pink;
+            border: 2px solid black;
+            border-radius:0px 100% 0px 100%;
+            rotate: 0deg;
+             position: absolute;
+             left: 0px;
+             rotate: 20deg;
+             top: 10px;
+             transition: rotate 10s left 20s;
+             
+        }
+        #e{
+            width: 80px;
+            height: 200px;
+            background-color: pink;
+            border: 2px solid black;
+            border-radius: 100%;
+            position: absolute;
+            z-index: 5;
+            transition: rotate 10s left 20s;
+        }
+        #stem{
+            width: 80px;
+            height: 80px;
+            background-color: orange;
+            border: 2px solid black;
+            position: absolute;
+            z-index: 6;
+            top: 190px;
+            
+        
+        }
+        #center:hover #a{
+            left: 40px;
+            rotate: 0deg;
+            transition: rotate 10s left 20s;
+        }
+
+        #center:hover #b{
+            rotate: 13deg;
+            left: 60px;
+            transition: rotate 10s left 20s;
+        }
+
+        #center:hover #c{
+            left: -45px;
+            rotate: 0deg;
+            transition: rotate 10s left 20s;
+        }
+
+        #center:hover #d{
+            rotate: -15deg;
+            left: -70px;
+            transition: rotate 10s left 20s;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="center">
+        <div id="a"></div>
+        <div id="b"></div>
+        <div id="d"></div>
+        <div id="c"></div>
+        <div id="e"></div>
+        <div id="stem"></div>
+    </div>
+
+</body>
+</html>
